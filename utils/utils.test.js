@@ -7,3 +7,14 @@ it('Should add two numbers', () =>  {
 
      expect(test).toBe(115).toBeA('number');
 });
+
+it('Should contains string lastname and first name', () => {
+     const user = utils.setName({}, 'Marc Louvion');
+
+     expect(user.firstName).toExist().toBeA('string');
+     expect(user.lastName).toExist().toBeA('string');
+});
+
+it('it should asyn add 2 numbers', () => {
+     
+});
